@@ -1,0 +1,40 @@
+if(solidMode){
+
+    project.ext {
+        packageName = 'com.iknow.multidex.dex2'
+        apkName = packageName.replace('.', '_')
+    }
+
+    apply from: '../gradle/sub-project-build.gradle'
+
+//    task copyFile(type: Copy) {
+//        from configurations.needBuildFile
+//        into "${rootDir}/build-inputs/"
+//    }
+//
+//    gradle.taskGraph.whenReady { taskGraph ->
+//        if (rootProject.hasProperty('TypeModuleSO')) {
+//            init << {
+//                copyFile.execute()
+//            }
+//        }
+//    }
+}
+else {
+
+    apply plugin: 'com.android.library'
+    apply from: '../gradle/global_config.gradle'
+    android {
+
+        defaultConfig {
+            versionCode 1
+            versionName "1.0"
+        }
+
+    }
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile 'com.android.support:appcompat-v7:25.1.0'
+   }
+}
