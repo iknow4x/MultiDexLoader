@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApkModules>
+    <Module moduleName="CTBusiness" childModule="CTPublicProduct,CTFlight,CTHotel,CTDestinationMain,CTQrcode,CTMyCtrip,CTLogin,
+    CTSchedule,CTTrain,CTSearch,CTVoice,CTCall,CTChat,CTPay,CTTranslator,CTWebDAV,CTCustomerService,CTReactNative,CTDebug,CTAR"/>
+    <!--Public Product-->
+    <Module moduleName="CTPublicProduct" childModule=""/>
+
+    <!--AR-->
+    <Module moduleName="CTAR" childModule=""/>
+
+    <!--机票-->
+    <Module moduleName="CTFlight"  childModule="CTFlightUseCar,CTFlightDispatch,CTFlightPassenger"/>
+    <Module moduleName="CTFlightDispatch" childModule=""/>
+    <Module moduleName="CTFlightUseCar" childModule=""/>
+    <Module moduleName="CTFlightPassenger" childModule=""/>
+
+    <!--酒店-->
+    <Module moduleName="CTHotel" childModule="CTHotelComment,CTHotelPassenger,CTHotelMap,CTHotelOrder,CTHotelDetail,CTHotelTool"/>
+    <Module moduleName="CTHotelComment" childModule=""/>
+    <Module moduleName="CTHotelPassenger" childModule=""/>
+    <Module moduleName="CTHotelMap" childModule=""/>
+    <Module moduleName="CTHotelOrder" childModule=""/>
+    <Module moduleName="CTHotelDetail" childModule=""/>
+    <Module moduleName="CTHotelTool" childModule=""/>
+
+
+    <!--攻略-->
+    <Module  moduleName="CTDestinationMain" childModule="CTDestinationStory,CTDestinationSchedule,CTDestinationStrategy,CTTour"/>
+    <Module  moduleName="CTDestinationSchedule" childModule=""/>
+    <Module  moduleName="CTDestinationStrategy" childModule=""/>
+    <Module  moduleName="CTDestinationStory" childModule=""/>
+
+    <Module  moduleName="CTQrcode" childModule=""/>
+    <!--我携-->
+    <Module  moduleName="CTMyCtrip" childModule=""/>
+    <Module  moduleName="CTLogin" childModule=""/>
+    <!--旅行日程-->
+    <Module  moduleName="CTSchedule" childModule="CTScheduleBusiness"/>
+    <Module  moduleName="CTScheduleBusiness" childModule=""/>
+
+    <!--火车票-->
+    <Module  moduleName="CTTrain" childModule="CTTrainBusiness"/>
+    <Module  moduleName="CTTrainBusiness" childModule=""/>
+    <!--搜索-->
+    <Module  moduleName="CTSearch" childModule=""/>
+    <!--语音-->
+    <Module  moduleName="CTVoice" childModule=""/>
+    <!--VOIP-->
+    <Module  moduleName="CTCall" childModule=""/>
+    <!--聊天-->
+    <Module  moduleName="CTChat" childModule=""/>
+    <!--支付-->
+    <Module  moduleName="CTPay" childModule=""/>
+
+    <Module  moduleName="CTTranslator" childModule=""/>
+    <Module  moduleName="CTWebDAV" childModule=""/>
+
+    <!-- 客服中心 -->
+    <Module  moduleName="CTCustomerService" childModule=""/>
+
+    <!-- 度假 -->
+    <Module  moduleName="CTTour" childModule=""/>
+
+    <!-- Debug -->
+    <Module moduleName="CTDebug" childModule=""/>
+
+    <Module moduleName="CTReactNative" childModule=""/>
+
+</ApkModules>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApkModules>
+    <Module packageName="com.iknow.multidex.dex1" resourceId="0x31"/>
+    <Module packageName="com.iknow.multidex.dex2" resourceId="0x36"/>
+</ApkModules>
