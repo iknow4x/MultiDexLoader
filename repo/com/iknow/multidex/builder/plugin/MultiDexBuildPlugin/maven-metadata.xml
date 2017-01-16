@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.iknow.multidex.builder.plugin</groupId>
+  <artifactId>MultiDexBuildPlugin</artifactId>
+  <version>1.0.0</version>
+  <versioning>
+    <versions>
+      <version>1.0.0</version>
+    </versions>
+    <lastUpdated>20170116145008</lastUpdated>
+  </versioning>
+</metadata>
