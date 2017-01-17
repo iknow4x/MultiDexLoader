@@ -1,1 +1,1 @@
-include ':bundle', ':MainDex', ':Dex1', ':Dex2'
+include ':bundle', ':MainDex', ':Dex1', ':Dex2', ':BSTools'

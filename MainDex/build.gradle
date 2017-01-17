@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'multidex.builder.plugin'
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.2"
     signingConfigs {
         sign {
             keyAlias 'multidexloader'
@@ -30,12 +30,19 @@ android {
             signingConfig signingConfigs.sign
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.github.iknow4:android-bspatch-lib:1.0.0'
     compile project(':bundle')
+//    compile project(':BS')
     if (!solidMode) {
         compile project(':Dex1')
         compile project(':Dex2')

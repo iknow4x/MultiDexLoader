@@ -38,7 +38,7 @@ public class MultiDexLoaderApplication extends Application {
             BundleCore.getInstance().init(this);
             BundleCore.getInstance().ConfigLogger(true, 1);
             Properties properties = new Properties();
-            properties.put("ctrip.android.sample.welcome", "ctrip.android.sample.WelcomeActivity"); // launch page
+            properties.put("com.iknow.sample.welcome", "com.iknow.sample.WelcomeActivity"); // launch page
             sharedPreferences = getSharedPreferences("bundlecore_configs", 0);
             String lastBundleKey = sharedPreferences.getString("last_bundle_key", "");
             bundleKey = buildBundleKey();
